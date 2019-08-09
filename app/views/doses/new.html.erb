@@ -1,9 +1,9 @@
 <div class="form"><h2>ADD <br> A DOSE.</h2>
-<%= simple_form_for @dose do |f| %>
-<%= f.input :description, wrapper_html: { class: 'input' } %>
-<%= f.association :ingredient, collection: Ingredient.all.order(:name), prompt: "Select an ingredient" %>
-<%= f.submit "send", wrapper_html: { class: 'btd' } %>
-<% end %>
+  <%= simple_form_for @dose do |f| %>
+  <%= f.input :description, wrapper_html: { class: 'input' } %>
+  <%= f.association :ingredient, collection: Ingredient.all.order(:name), prompt: "Select an ingredient" %>
+  <%= f.submit "send" %>
+  <% end %>
 </div>
 
 <div id="footer" class="col-xs-12 col-sm-12 col-md-12>"

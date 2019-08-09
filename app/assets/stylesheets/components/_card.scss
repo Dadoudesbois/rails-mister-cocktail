@@ -15,6 +15,7 @@ $lgb: #2F343B;
   color: white;
   margin: 10px auto;
   padding: 20px;
+  overflow:scroll;
 }
 
 .card-description {
@@ -22,24 +23,15 @@ $lgb: #2F343B;
   width: 50%;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  // box-shadow: 5px 5px 10px $grey;
-  // display: flex;
-  // align-items: center;
-  // justify-content: space-around;
-/*  font-size: 22px;*/
   text-align: center;
   color: $grey;
-/*  font-weight: bolder;*/
-/*  text-shadow: 0 0 10px rgba(0,0,0,0.7);*/
   margin: 20px auto;
   padding: 20px;
   h2 {
-  font-family: impact;
-  // font-style: bold;
-  letter-spacing: 5px;
+    font-family: impact;
+    letter-spacing: 5px;
   }
 }
-
 
   li, ul {
     margin-left: 0px;
@@ -54,7 +46,7 @@ $lgb: #2F343B;
   align-items: center;
   justify-content: space-around;
   color: white;
-  // font-style: bold;
+  text-align: center;
   font-family:impact;
   letter-spacing: 2px;
   padding: 20px 30px;

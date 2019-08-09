@@ -4,22 +4,19 @@ $c1: #DCDCDC;
 $lgb: #2F343B;
 
 .form {
-  width: 50%;
+  width: 70%;
+  background: white;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   text-align: left;
   color: $grey;
-  margin: 40px auto;
+  margin:  50px auto;
   padding: 20px;
   h2 {
   font-family: impact;
-  // font-style: bold;
   letter-spacing: 2px;
   text-align: left;
+  overflow: hidden;
   }
 }
 
-.input:focus {
-  outline: none !important;
-  box-shadow: 5px 5px 10px $grey;
-}
