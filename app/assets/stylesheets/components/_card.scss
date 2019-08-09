@@ -13,7 +13,7 @@ $lgb: #2F343B;
   align-items: center;
   justify-content: space-around;
   color: white;
-  margin: 20px auto;
+  margin: 10px auto;
   padding: 20px;
 }
 
@@ -47,17 +47,6 @@ $lgb: #2F343B;
     padding-left: 0px;
     text-align: center;
   }
-
-
-
-.cards {
-  display: flex;
-  justify-content: space-around;
-// // //   grid-template-columns: 1fr 1fr;
-// // //   // grid-gap: 16px;
-  flex-grow: 0;
-  margin: 40px auto;
-}
 
 .card-category {
   width: 80%;

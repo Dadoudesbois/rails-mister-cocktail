@@ -4,8 +4,8 @@ COCKTAIL .</h2>
 <%= simple_form_for [@cocktail] do |f| %>
 <%= f.input :name, wrapper_html: { class: 'input' } %>
 <%= f.submit "save", wrapper_html: { class: 'btd' } %>
-<%= f.input :photo %>
-<%= f.input :photo_cache, as: :hidden, wrapper_html: { class: 'btd' } %>
+<%= f.input :photo, wrapper_html: { class: 'btd' } %>
+<%= f.input :photo_cache, as: :hidden%>
 <% end %>
 </div>
 
