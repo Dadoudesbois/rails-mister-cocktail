@@ -2,17 +2,6 @@ $grey: #303339;
 $c1: #DCDCDC;
 $lgb: #2F343B;
 
-.card-ind {
-  background-size: cover;
-  background-position: center;
-  height: 250px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  color: white;
-
-  margin: 20px auto;
-  padding: 20px;
-}
 
 .card {
   background-size: cover;
@@ -58,6 +47,8 @@ $lgb: #2F343B;
     padding-left: 0px;
     text-align: center;
   }
+
+
 
 .cards {
   display: flex;
