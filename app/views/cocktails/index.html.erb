@@ -1,7 +1,36 @@
-<h1>Cocktails</h1>
-<div class="cards">
-<% @cocktails.each do |cocktail| %>
-      <h2> <%= link_to cocktail.name, cocktail_path(cocktail), class: "btd" %></h2>
-<%end%>
+<h1>YOUR <br> COCKTAILS.</h1>
+
+<div class="container">
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+    <div class="col-xs-12 col-sm-6 col-md-4 ">
+
+
+          <div class="card"
+            style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+                   url('<%= cl_image_path cocktail.photo, height: 200, width: 300, crop: :fill %>')">
+            <h3> <%= link_to cocktail.name.upcase, cocktail_path(cocktail), class: "card-category" %></h3>
+            <div>
+              <ul>
+              <% cocktail.ingredients.each do |ingredient| %>
+                <li>
+                  <%= ingredient.name %>
+                </li>
+              <%end%>
+              </ul>
+            </div>
+          </div>
+
+    </div>
+    <%end%>
+  </div>
 </div>
-<p> <%=link_to "Add a cocktail", new_cocktail_path, class:"btd" %></p>
+
+<div id="footer" class="col-xs-12 col-sm-12 col-md-12>"
+  style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+                   url('https://res.cloudinary.com/dytx1bbld/image/upload/v1565343398/rhn9frdzkvmloobcyp1y.jpg')">
+ <h2><%=link_to "CREATE A COCKTAIL", new_cocktail_path, class:"back" %><h2>
+</div>
+
+
+

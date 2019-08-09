@@ -1,33 +1,47 @@
 $c1: #DCDCDC;
+$gb: #2A2F36;
+$lgb: #2F343B;
 
-.btd {
+.back {
   color: $c1 ;
   padding: 5px 15px;
-  border-radius: 15px;
+  margin: 5px auto;
+  text-align: center;
+}
+
+.back:hover {
+  opacity: 1;
+  text-decoration: none;
+  color: white;
+}
+
+.btd {
+  color: $gb ;
+  padding: 5px 15px;
+  border-radius: 5px;
   background: white;
   box-shadow: 2px 2px 10px $c1;
 }
 
 .btd:hover {
   opacity: 1;
-  border: 1px solid $c1;
   text-decoration: none;
   background: $c1;
   color: white;
 }
 
 .bta {
-  color: black ;
-  padding: 5px 15px;
-  border-radius: 15px;
-  background: white;
-  box-shadow: 2px 2px 10px $c1;
+  color: $lgb ;
+
 }
 
 .bta:hover {
   opacity: 1;
-  border: 1px solid $c1;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background: $c1;
+  box-shadow: 2px 2px 10px $c1;
   text-decoration: none;
-  background: black;
+  background: $lgb;
   color: white;
 }

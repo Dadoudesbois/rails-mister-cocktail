@@ -1,0 +1,34 @@
+$c1: #DCDCDC;
+$gb: #2A2F36;
+$lgb: #2F343B;
+
+
+#banner {
+  height: 55vh;
+  background-size: cover;
+  text-align: lef;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  // position: fixed;
+  z-index: 10;
+  h1 {
+    font-size: 200px;
+    font-family: impact;
+    font-style: bold;
+  }
+  padding-left: 10%;
+  line-height: 10%;
+  letter-spacing: 10px;
+  overflow: hidden;
+}
+
+h1 {
+    font-size: 180px;
+    font-family: impact;
+    font-style: bold;
+    color: $gb;
+    margin-left: 10%;
+}

@@ -1,25 +1,90 @@
-.card {
-/*  background-size: cover;*/
+$grey: #303339;
+$c1: #DCDCDC;
+$lgb: #2F343B;
+
+.card-ind {
+  background-size: cover;
   background-position: center;
-/*  height: 150px;*/
-  width: 600px;
-  border-radius: 1px;
+  height: 250px;
+  border-radius: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-/*  font-size: 22px;*/
-  color: grey;
-/*  font-weight: bolder;*/
-/*  text-shadow: 0 0 10px rgba(0,0,0,0.7);*/
+  color: white;
+
   margin: 20px auto;
   padding: 20px;
 }
 
+.card {
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.card-description {
+
+  width: 50%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  // box-shadow: 5px 5px 10px $grey;
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-around;
+/*  font-size: 22px;*/
+  text-align: center;
+  color: $grey;
+/*  font-weight: bolder;*/
+/*  text-shadow: 0 0 10px rgba(0,0,0,0.7);*/
+  margin: 20px auto;
+  padding: 20px;
+  h2 {
+  font-family: impact;
+  // font-style: bold;
+  letter-spacing: 5px;
+  }
+}
+
+
+  li, ul {
+    margin-left: 0px;
+    list-style: none;
+    padding-left: 0px;
+    text-align: center;
+  }
+
 .cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 16px;
+  display: flex;
+  justify-content: space-around;
+// // //   grid-template-columns: 1fr 1fr;
+// // //   // grid-gap: 16px;
   flex-grow: 0;
   margin: 40px auto;
+}
+
+.card-category {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  // font-style: bold;
+  font-family:impact;
+  letter-spacing: 2px;
+  padding: 20px 30px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px $grey;
+  background: cover;
+  margin: 10px auto;
+}
+
+.card-category:hover {
+  text-decoration: none;
+  color: $c1;
 }

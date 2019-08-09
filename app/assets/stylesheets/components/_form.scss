@@ -1,0 +1,25 @@
+
+$grey: #303339;
+$c1: #DCDCDC;
+$lgb: #2F343B;
+
+.form {
+  width: 50%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  text-align: left;
+  color: $grey;
+  margin: 40px auto;
+  padding: 20px;
+  h2 {
+  font-family: impact;
+  // font-style: bold;
+  letter-spacing: 2px;
+  text-align: left;
+  }
+}
+
+.input:focus {
+  outline: none !important;
+  box-shadow: 5px 5px 10px $grey;
+}

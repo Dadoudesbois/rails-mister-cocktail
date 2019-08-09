@@ -1,5 +1,16 @@
-<h1>Your cocktail :</h1>
+<div class="form">
+<h2>YOUR <br>
+COCKTAIL .</h2>
 <%= simple_form_for [@cocktail] do |f| %>
-<%= f.input :name %>
-<%= f.submit "send your cocktail", class: "btd" %>
+<%= f.input :name, wrapper_html: { class: 'input' } %>
+<%= f.submit "save", wrapper_html: { class: 'btd' } %>
+<%= f.input :photo %>
+<%= f.input :photo_cache, as: :hidden, wrapper_html: { class: 'btd' } %>
 <% end %>
+</div>
+
+<div id="footer" class="col-xs-12 col-sm-12 col-md-12>"
+  style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+                   url('https://res.cloudinary.com/dytx1bbld/image/upload/v1565343428/be7lclbe4zxwsszqxhuz.jpg')">
+ <h2><%=link_to "COCKTAIL LIST", cocktails_path, class:"back" %><h2>
+</div>
