@@ -1,0 +1,6 @@
+<h1>Dose :</h1>
+<%= simple_form_for @dose do |f| %>
+<%= f.input :description %>
+<%= f.association :ingredient, collection: Ingredient.all.order(:name), prompt: "Select an ingredient" %>
+<%= f.submit "send", class: "btd" %>
+<% end %>
