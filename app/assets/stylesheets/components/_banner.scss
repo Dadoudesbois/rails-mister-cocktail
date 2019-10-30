@@ -6,7 +6,7 @@ $lgb: #2F343B;
 #banner {
   height: 55vh;
   background-size: cover;
-  text-align: lef;
+  text-align: left;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -14,19 +14,21 @@ $lgb: #2F343B;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   // position: fixed;
   z-index: 10;
+  display: flex;
   h1 {
-    font-size: 200px;
+    font-size: 16rem;
     font-family: impact;
     font-style: bold;
+    align-self: flex-end;
   }
-  padding-left: 10%;
+  // padding-left: 10%;
   line-height: 10%;
   letter-spacing: 10px;
   overflow: hidden;
 }
 
 .title {
-    font-size: 180px;
+    font-size: 16rem;
     font-family: impact;
     font-style: bold;
     color: $gb;
@@ -41,6 +43,6 @@ $lgb: #2F343B;
 
 
 #banner-typed-text {
-  height: 50vh;
+  height: 32rem;
   width: 50vw
 }
