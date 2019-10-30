@@ -1,45 +1,58 @@
 <div id="banner" class="col-xs-12 col-sm-12 col-md-12>"
   style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
   url('<%= cl_image_path @cocktail.photo, height: 300, width: 600, crop: :fill %>')">
+
   <h1>
     <%= @cocktail.name.upcase %>.
   </h1>
+
 </div>
 
 <div class= "card-description">
+
   <h2>
     INGREDIENTS
   </h2>
+
   <% @doses = @cocktail.doses %>
+
   <ul>
     <% @doses.each do |dose| %>
+
       <li>
         <%= dose.ingredient.name %>, <%= dose.description%>
         <%=link_to "Delete dose", destroy_dose_path(dose),
           method: :delete,
           data: { confirm: "Are you sure?" }, class:"bta" %>
       </li>
+
     <%end%>
   </ul>
+
   <p>
     <%=link_to "Add a dose", new_dose_path, class:"btd" %>
   </p>
+
 </div>
 
 <div id="footer_up"
   style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
   url('<%= cl_image_path @cocktail.photo, height: 300, width: 600, crop: :fill %>')">
+
   <h2>
     <%=link_to "BACK TO COCKTAIL LIST", cocktails_path, class:"back" %>
   <h2>
+
 </div>
 
 <div id="footer"
   style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
   url('https://res.cloudinary.com/dytx1bbld/image/upload/v1565343398/rhn9frdzkvmloobcyp1y.jpg')">
+
   <h2>
     <%=link_to "DELETE COCKTAIL", destroy_cocktail_path(@cocktail),
       method: :delete,
       data: { confirm: "Are you sure?" }, class:"back" %>
   <h2>
+
 </div>

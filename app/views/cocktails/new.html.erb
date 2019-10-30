@@ -1,16 +1,27 @@
 <div class="form">
-<h2>YOUR <br>
-COCKTAIL .</h2>
-<%= simple_form_for [@cocktail] do |f| %>
-<%= f.input :name, wrapper_html: { class: 'input' } %>
-<%= f.submit "save", wrapper_html: { class: 'btd' } %>
-<%= f.input :photo %>
-<%= f.input :photo_cache, as: :hidden%>
-<% end %>
+
+  <h1>
+      YOUR <br>
+    COCKTAIL .
+  </h1>
+
+<%= render 'form' %>
+
+  <%= simple_form_for [@cocktail] do |f| %>
+  <%= f.input :name, label: false, placeholder: "Your cocktail name", class: 'input' %>
+  <%= f.input :photo, label: false, value: "image", class: 'btd'%>
+  <%= f.input :photo_cache, as: :hidden%>
+  <%= f.submit "save", class: 'btd'%>
+  <% end %>
+
 </div>
 
 <div id="footer" class="col-xs-12 col-sm-12 col-md-12>"
   style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
-                   url('https://res.cloudinary.com/dytx1bbld/image/upload/v1565343428/be7lclbe4zxwsszqxhuz.jpg')">
- <h2><%=link_to "COCKTAIL LIST", cocktails_path, class:"back" %><h2>
+  url('https://res.cloudinary.com/dytx1bbld/image/upload/v1565343428/be7lclbe4zxwsszqxhuz.jpg')">
+
+  <h2>
+    <%=link_to "COCKTAIL LIST", cocktails_path, class:"back" %>
+  <h2>
+
 </div>
