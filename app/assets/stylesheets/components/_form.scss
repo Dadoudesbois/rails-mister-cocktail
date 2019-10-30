@@ -3,17 +3,34 @@ $grey: #303339;
 $c1: #DCDCDC;
 $lgb: #2F343B;
 
+.bg-form {
+  position:absolute;
+  top: 0px;
+  bottom: -10px;
+  left:0px;
+  right:0px;
+  background-size: cover;
+  // background-color: #25314a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .form {
-  width: 400px;
+  width: 450px;
   background: white;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 10px gray;
+  border: 1px solid #25314a;
   text-align: left;
   color: $grey;
   margin:  50px auto;
   padding: 20px;
   h1 {
   font-family: impact;
+  font-size: 90px;
+  line-height: 88%;
   letter-spacing: 2px;
   text-align: left;
   overflow: hidden;
