@@ -50,7 +50,10 @@ $lgb: #2F343B;
 }
 
 .form-group {
-  margin: 10px;
+  #dose_description, #cocktail_name {
+    width: 100%;
+    border-radius: 5px;
+  }
 }
 
 .formy {
@@ -62,4 +65,12 @@ $lgb: #2F343B;
   padding: 20px;
   color: gray;
 }
+
+.select {
+  appearance: none;
+  width: 100%;
+  border-radius: 5px;
+  // background-image: url('../../images/favicon.png') ;
+}
+
 

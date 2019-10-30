@@ -1,0 +1,13 @@
+  <%= simple_form_for @dose do |f| %>
+
+    <div class="form-group">
+      <%= f.input :description, label: false, placeholder: "Description...", class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= f.association :ingredient, label: false,collection: Ingredient.all.order(:name), prompt: "🍋🍉🍍🥑🍑🥝🍇...            " %>
+    </div>
+
+    <%= f.submit "SAVE", class: 'btd'%>
+
+  <% end %>
