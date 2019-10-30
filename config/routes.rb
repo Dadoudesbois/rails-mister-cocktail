@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   root to: 'cocktails#index', as: :cocktails
   get 'cocktails/new', to: 'cocktails#new', as: :new_cocktail
   post '/', to: 'cocktails#create'
+  get 'cocktails/edit', to: 'cocktails#edit', as: :edit_cocktail
+  patch 'cocktails/:id', to: 'cocktails#update'
   get 'cocktails/:id', to: 'cocktails#show', as: :cocktail
   get 'cocktails/:id/doses/new', to: 'doses#new', as: :new_dose
   post 'cocktails/:id/doses', to: 'doses#create', as: :doses

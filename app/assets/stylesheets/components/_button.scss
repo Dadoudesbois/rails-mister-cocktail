@@ -35,6 +35,23 @@ $lgb: #2F343B;
   color: black;
 }
 
+.btl {
+  width: 100%;
+  color: white ;
+  text-align: center;
+  padding: 2px 15px;
+  border-radius: 5px;
+  background: $c1;
+  box-shadow: 2px 2px 10px $c1;
+}
+
+.btl:hover {
+  opacity: 1;
+  text-decoration: none;
+  background: white;
+  color: $c1;
+}
+
 .bta {
   color: $lgb ;
 }

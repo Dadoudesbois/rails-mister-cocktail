@@ -7,6 +7,17 @@ class CocktailsController < ApplicationController
     @cocktail = Cocktail.new
   end
 
+  def edit
+    @cocktail = Cocktail.find(params[:format])
+  end
+
+  def update
+    @cocktail = Cocktail.find(params[:format])
+    @cocktail.update
+
+    redirect_to cocktail_path(@cocktail)
+  end
+
   def create
     @cocktail = Cocktail.new(cocktail_params)
     @cocktail.save
