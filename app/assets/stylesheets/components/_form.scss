@@ -18,7 +18,8 @@ $lgb: #2F343B;
 
 
 .form {
-  width: 450px;
+  width: 370px;
+  overflow:hidden;
   background: white;
   border-radius: 5px;
   box-shadow: 2px 2px 10px gray;
@@ -26,10 +27,10 @@ $lgb: #2F343B;
   text-align: left;
   color: $grey;
   margin:  50px auto;
-  padding: 20px;
+  padding: 10px;
   h1 {
   font-family: impact;
-  font-size: 90px;
+  font-size: 65px;
   line-height: 88%;
   letter-spacing: 2px;
   text-align: left;
