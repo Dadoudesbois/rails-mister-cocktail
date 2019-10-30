@@ -1,20 +1,25 @@
 $grey: #303339;
 $c1: #DCDCDC;
 $lgb: #2F343B;
+$grid-gutter-width: 2vw !default;
 
+.row {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
 
 .card {
   background-size: cover;
   background-position: center;
   height: 250px;
-  width: 96%;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin: 5px;
   color: white;
-  margin: 10px auto;
   padding: 10px;
   overflow:scroll;
 }
@@ -25,12 +30,13 @@ $lgb: #2F343B;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   text-align: center;
   color: $grey;
-  margin: 20px auto;
-  margin-bottom: 150px;
+  margin: 4vh auto;
+  margin-bottom: 14vh ;
   padding: 20px;
   h2 {
     font-family: impact;
-    letter-spacing: 5px;
+    letter-spacing: 0.3vw;
+    font-size: 7vw;
   }
 }
 
