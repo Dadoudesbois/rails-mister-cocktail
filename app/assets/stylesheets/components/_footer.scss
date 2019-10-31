@@ -1,7 +1,7 @@
 $grey: #303339;
 
 #footer {
-  height: 6vmin;
+  height: 10vmin;
   width: 100vw;
   background-size: cover;
   text-align: center;
@@ -12,29 +12,31 @@ $grey: #303339;
   bottom: 0px;
   z-index: 10;
     h2 {
-    font-family: impact;
+    // font-family: impact;
+    font-family: 'Staatliches', cursive;
     font-style: bold;
     letter-spacing: 5px;
-    font-size: 5vmin;
+    font-size: 9vmin;
     margin: 0px;
   }
 }
 
 #footer_up {
   width: 100vw;
-  height: 6vmin;
+  height: 10vmin;
   background-size: cover;
   text-align: center;
   // padding: 5px;
   color: white;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   position: fixed;
-  bottom: 6vmin;
+  bottom: 10vmin;
   z-index: 10;
     h2 {
-    font-family: impact;
+    // font-family: impact;
+    font-family: 'Staatliches', cursive;
     font-style: bold;
     letter-spacing: 5px;
-    font-size: 5vmin;
+    font-size: 9vmin;
   }
 }

@@ -25,16 +25,17 @@ $grid-gutter-width: 2vw !default;
 }
 
 .card-description {
-  width: 50%;
+  width: 70%;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   text-align: center;
   color: $grey;
   margin: 4vh auto;
-  margin-bottom: 15vh ;
+  margin-bottom: 23vh ;
   padding: 20px;
   h2 {
-    font-family: impact;
+    // font-family: impact;
+    font-family: 'Staatliches', cursive;
     letter-spacing: 0.3vw;
     font-size: 7vw;
   }
@@ -54,7 +55,8 @@ li, ul {
   justify-content: space-around;
   color: white;
   text-align: center;
-  font-family:impact;
+  // font-family:impact;
+  font-family: 'Staatliches', cursive;
   letter-spacing: 2px;
   padding: 20px 30px;
   border-radius: 5px;
