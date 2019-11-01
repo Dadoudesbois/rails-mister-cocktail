@@ -1,6 +1,6 @@
 <div id="banner" class="col-xs-12 col-sm-12 col-md-12>"
   style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
-  url('<%= cl_image_path @cocktail.photo, height: 300, width: 600, crop: :fill %>')">
+  url('<%= cl_image_path @cocktail.photo, height: 300, width: 600, crop: :fill unless @cocktail.photo.blank?%>')">
 
   <h1>
     <%= @cocktail.name.upcase %>.
@@ -41,7 +41,7 @@
 
 <div id="footer_up"
   style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
-  url('<%= cl_image_path @cocktail.photo, height: 300, width: 600, crop: :fill %>')">
+  url('<%= cl_image_path @cocktail.photo, height: 300, width: 600, crop: :fill unless @cocktail.photo.blank? %>')">
 
   <h2>
     <%=link_to "BACK TO COCKTAILS", cocktails_path, class:"back" %>
