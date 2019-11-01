@@ -21,7 +21,7 @@
 
       <li>
         <%= dose.ingredient.name %>, <%= dose.description%>
-        <%=link_to "Delete dose", destroy_dose_path(dose),
+        <%=link_to "🗑️", destroy_dose_path(dose),
           method: :delete,
           data: { confirm: "Are you sure 😱 ?" }, class:"bta" %>
       </li>
@@ -30,7 +30,7 @@
   </ul>
 
   <p>
-    <%=link_to "Add a dose", new_dose_path, class:"btl" %>
+    <%=link_to "➕ Add dose", new_dose_path, class:"btl" %>
   </p>
 
   <p>
