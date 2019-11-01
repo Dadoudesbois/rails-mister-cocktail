@@ -1,20 +1,18 @@
 <h1 class="title" id="banner-typed-text"></h1>
-
-
 <div class="container">
   <div class="row">
     <% @cocktails.each do |cocktail| %>
 
-    <div class="card col-sm-10 col-md-5 col-lg-4 .col-auto"
-      style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
-      url('<%= cl_image_path cocktail.photo, height: 200, width: 300, crop: :fill unless cocktail.photo.blank? %>')">
+      <div class="card col-sm-10 col-md-5 col-lg-4 .col-auto"
+        style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+        url('<%= cl_image_path cocktail.photo, height: 200, width: 300, crop: :fill unless cocktail.photo.blank? %>')">
+        <h3>
+          <%= link_to cocktail.name.upcase, cocktail_path(cocktail), class: "card-category" %>
+        </h3>
+      </div>
 
-      <h3>
-        <%= link_to cocktail.name.upcase, cocktail_path(cocktail), class: "card-category" %>
-      </h3>
+    <%end%>
 
-    </div>
-  <%end%>
   </div>
 </div>
 

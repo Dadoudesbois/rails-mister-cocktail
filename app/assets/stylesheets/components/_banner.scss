@@ -17,7 +17,6 @@ $lgb: #2F343B;
   display: flex;
   h1 {
     font-size: 20vw;
-    // font-family: impact;
     font-family: 'Staatliches', cursive;
     font-style: bold;
     align-self: flex-end;
@@ -26,13 +25,11 @@ $lgb: #2F343B;
     bottom: 1vh;
     line-height: 88%;
   }
-  // line-height: 10%;
   letter-spacing: 5px;
   overflow: hidden;
 }
 
 .title {
-    // font-family: impact;
     font-family: 'Staatliches', cursive;
     font-style: bold;
     color: $gb;
@@ -46,8 +43,6 @@ $lgb: #2F343B;
       font-size: 20vw;
     }
 }
-
-
 
 #banner-typed-text {
     height: 40vw;

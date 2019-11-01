@@ -1,7 +1,10 @@
 $grey: #303339;
 $c1: #DCDCDC;
 $lgb: #2F343B;
-$grid-gutter-width: 2vw !default;
+
+.container {
+  margin-bottom: 10vmin;
+}
 
 .row {
   display: flex;
@@ -34,7 +37,6 @@ $grid-gutter-width: 2vw !default;
   margin-bottom: 23vh ;
   padding: 20px;
   h2 {
-    // font-family: impact;
     font-family: 'Staatliches', cursive;
     letter-spacing: 0.3vw;
     font-size: 7vw;
@@ -55,7 +57,6 @@ li, ul {
   justify-content: space-around;
   color: white;
   text-align: center;
-  // font-family:impact;
   font-family: 'Staatliches', cursive;
   letter-spacing: 2px;
   padding: 20px 30px;
